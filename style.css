@@ -1,0 +1,146 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+body {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(90deg, #b6b6b6 0%, #fad6d6 100%);
+}
+
+h1 {
+  text-align: center;
+  margin: 100px 0px 30px 0;
+  color: #2a2a2a;
+}
+
+.results {
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  width: 500px;
+  height: 90px;
+  text-align: center;
+  padding: 1em 2em;
+  background-color: #dfdfdf;
+}
+
+.results .top-input {
+  font-size: 1em;
+}
+
+.results .bottom-input {
+  font-size: 1.8em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container .main {
+  background-color: white;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .main .column {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .main .column button {
+  flex: 1;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 2em 2.5em;
+  background-color: white;
+  border: 1px solid #838383;
+  border-left: 1px solid #5d5d5d;
+  border-right: 1px solid #727272;
+  cursor: pointer;
+}
+
+.container .main .column button:hover {
+  background-color: #c7c7c7;
+}
+
+.container .main .column .del-button {
+  flex: 1;
+}
+
+.container .main .column .grow-ac {
+  flex: 4.6;
+  background-color: #f88c8c;
+}
+
+.container .main .column .grow-ac:hover {
+  background-color: #e26b6b;
+}
+
+.container .main .column .grow-equals {
+  flex: 4.5;
+  background-color: #bcd884;
+}
+
+.container .main .column .grow-equals:hover {
+  background-color: #9cb960;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container .main .column button {
+    flex: 1;
+    padding: 2vw 2em;
+  }
+  .container .main .column .grow-ac {
+    flex: 3.35;
+  }
+  .container .main .column .grow-equals {
+    flex: 3.35;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .results {
+    margin: 0 auto;
+    gap: 10px;
+    width: 378px;
+    height: 90px;
+    padding: 1em 2em;
+    border: 0px;
+  }
+  .results .top-input {
+    font-size: 1em;
+  }
+  .results .bottom-input {
+    font-size: 1.5em;
+  }
+  .container .main {
+    width: 380px;
+    background-color: blue;
+  }
+  .container .main .column button {
+    padding: 2vw 1.5em;
+  }
+  .container .main .column .grow-ac {
+    flex: 3.4;
+  }
+  .container .main .column .grow-equals {
+    flex: 3.3;
+  }
+}
+/*# sourceMappingURL=style.css.map */

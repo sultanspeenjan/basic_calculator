@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>Basic Calculator</h1>
+
+    <div class="results">
+        <div class="top-input" id="top-input"> </div>
+        <div class="bottom-input" id="bottom-input">123</div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="column">
+                <button class="grow-ac" id="AC" onclick="clearAll()">AC</button>
+                <button class="del-button" id="DEL" onclick="del()">DEL</button>
+                <button id="division" onclick="arithmetic('÷')">÷</button>
+            </div>
+            <div class="column">
+                <button id="1" onclick="addNum(1)">1</button>
+                <button id="2" onclick="addNum(2)">2</button>
+                <button id="3" onclick="addNum(3)">3</button>
+                <button id="x" onclick="arithmetic('x')">x</button>
+            </div>
+            <div class="column">
+                <button id="4" onclick="addNum(4)">4</button>
+                <button id="5" onclick="addNum(5)">5</button>
+                <button id="6" onclick="addNum(6)">6</button>
+                <button id="+" onclick="arithmetic('+')">+</button>
+            </div>
+            <div class="column">
+                <button id="7" onclick="addNum(7)">7</button>
+                <button id="8" onclick="addNum(8)">8</button>
+                <button id="9" onclick="addNum(9)">9</button>
+                <button id="-" onclick="arithmetic('-')">-</button>
+            </div>
+            <div class="column">
+                <button id="." onclick="addNum('.')">.</button>
+                <button id="0" onclick="addNum(0)">0</button>
+                <button class="grow-equals" id="equals" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
